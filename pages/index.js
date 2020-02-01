@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import "../styles.sass";
-import ourStoryImage_1 from "../public/static/images/our-story.png";
 import logo from "../public/static/images/français-logo.png";
+
+//IMAGES
+import ourStoryImage_1 from "../public/static/images/our-story.png";
+import menuImage_1 from "../public/static/images/menu-group.jpg";
+import menuImage_2 from "../public/static/images/menu-group2.jpg";
+import menuImage_3 from "../public/static/images/menu-group3.jpg";
+import menuImage_4 from "../public/static/images/menu-group4.jpg";
 
 function HomePage() {
   const [activated, setActivated] = useState(false);
@@ -17,6 +23,7 @@ function HomePage() {
 
   return (
     <div className={activated === true ? "open" : ""}>
+      {/* NAVIGATION SECTION */}
       <Head>
         <link
           rel="stylesheet"
@@ -65,6 +72,7 @@ function HomePage() {
           </nav>
         </div>
       </header>
+      {/* HERO SECTION */}
       <section className="hero">
         <div className="container">
           <h2 className="sub-headline">
@@ -88,6 +96,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+      {/* DISCOVER SECTION */}
       <section className="discover">
         <div className="container">
           <div className="restaurant-info">
@@ -119,16 +128,44 @@ function HomePage() {
           </div>
         </div>
       </section>
-      <section className="tasteful-recipes between">
+      {/* RECIPE SECTION */}
+      <section className="delicious-recipes between">
         <div className="container">
           <div className="global-headline">
             <div className="animate-top">
               <h2 className="sub-headline">
-                <span className="first-letter">D</span>iscover
+                <span className="first-letter">D</span>elicious
               </h2>
             </div>
             <div className="animate-bottom">
-              <h1 className="headline headline-dark">Our Story</h1>
+              <h1 className="headline headline-dark">Recipes</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* MENU SECTION */}
+      <section className="discover-menu">
+        <div className="container">
+          <div className="restaurant-info">
+            <div className="image-group padding-right animate-left">
+              <img src={menuImage_1} alt="" />
+              <br />
+              <img src={menuImage_2} alt="" />
+              <br />
+              <img src={menuImage_3} alt="" />
+              <br />
+              <img src={menuImage_4} alt="" />
+            </div>
+            <div className="restaurant-description animate-right">
+              <div className="global-headline">
+                <h2 className="sub-headline">
+                  <span className="first-letter">D</span>iscover
+                </h2>
+                <h1 className="headline headline-dark">Menu</h1>
+                <div className="asterisk">
+                  <i className="fas fa-asterisk"> </i>
+                </div>
+              </div>
             </div>
           </div>
         </div>

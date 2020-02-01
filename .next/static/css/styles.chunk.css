@@ -29,7 +29,7 @@ section {
 
 img {
   width: 100%;
-  max-width: 100px; }
+  max-width: 600px; }
 
 a {
   text-decoration: none; }
@@ -223,7 +223,8 @@ header {
 .headline-dark {
   color: #515151;
   letter-spacing: .7rem;
-  margin-right: -.7rem; }
+  margin-right: -.7rem;
+  margin-top: 10px; }
 
 .global-headline .sub-headline {
   letter-spacing: -1px;
@@ -258,6 +259,19 @@ header {
 .body-btn:hover::before,
 .body-btn:focus::before {
   background-color: #252525; }
+
+/* Recipes */
+.delicious-recipes {
+  background: url(/_next/static/images/tasteful-recipes-a1a4238876d68e5746f893a57a1c90fe.jpg);
+  background-size: cover; }
+
+.between {
+  min-height: 65vh;
+  display: flex;
+  align-items: center; }
+  .between h1 {
+    color: white;
+    margin-left: 10px; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
