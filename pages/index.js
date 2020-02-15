@@ -9,6 +9,8 @@ import menuImage_1 from "../public/static/images/menu-group.jpg";
 import menuImage_2 from "../public/static/images/menu-group2.jpg";
 import menuImage_3 from "../public/static/images/menu-group3.jpg";
 import menuImage_4 from "../public/static/images/menu-group4.jpg";
+import delightImage_1 from "../public/static/images/delight-group.jpg";
+import delightImage_2 from "../public/static/images/delight-group-2.jpg";
 
 function HomePage() {
   const [activated, setActivated] = useState(false);
@@ -149,11 +151,11 @@ function HomePage() {
           <div className="restaurant-info">
             <div className="image-group padding-right animate-left">
               <img src={menuImage_1} alt="" />
-              <br />
+
               <img src={menuImage_2} alt="" />
-              <br />
+
               <img src={menuImage_3} alt="" />
-              <br />
+
               <img src={menuImage_4} alt="" />
             </div>
             <div className="restaurant-description animate-right">
@@ -166,10 +168,140 @@ function HomePage() {
                   <i className="fas fa-asterisk"> </i>
                 </div>
               </div>
+              <p>
+                We will also learn how to use keyframes and hover effect
+                animations as well as a new tool to animate on scroll called
+                Scroll Reveal. Finally we will use media queries to make this
+                web design responsive! The Rosa is a premium WordPress theme you
+                can purchase. Links below.
+              </p>
+              <a href="#" className="btn body-btn">
+                View Menu
+              </a>
             </div>
           </div>
         </div>
       </section>
+      {/* BLEND SECTION */}
+      <section className="perfect-blend between">
+        <div className="container">
+          <div className="global-headline">
+            <div className="animate-top">
+              <h2 className="sub-headline">
+                <span className="first-letter">T</span>he perfect
+              </h2>
+            </div>
+            <div className="animate-bottom">
+              <h1 className="headline headline-dark">Blend</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* CULINARY SECTION */}
+      <section className="culinary-delight">
+        <div className="container">
+          <div className="restaurant-info">
+            <div className="restaurant-description animate-right">
+              <div className="global-headline">
+                <h2 className="sub-headline">
+                  <span className="first-letter">C</span>ulinary
+                </h2>
+                <h1 className="headline headline-dark">Delights</h1>
+                <div className="asterisk">
+                  <i className="fas fa-asterisk"> </i>
+                </div>
+              </div>
+              <p>
+                We will also learn how to use keyframes and hover effect
+                animations as well as a new tool to animate on scroll called
+                Scroll Reveal. Finally we will use media queries to make this
+                web design responsive! The Rosa is a premium WordPress theme you
+                can purchase. Links below.
+              </p>
+              <a href="#" className="btn body-btn">
+                Make A Reservation
+              </a>
+            </div>
+            <div className="image-group">
+              <img className="animate-top" src={delightImage_1} />
+              <img className="animate-top" src={delightImage_2} />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Footer */}
+      <footer>
+        <div className="container">
+          <div className="back-to-top">
+            <a href="#hero">
+              <i className="fas fa-chevron-up"></i>
+            </a>
+          </div>
+          <div className="footer-content">
+            <div className="footer-content-animate animate-up">
+              <h4>About Français</h4>
+              <div className="asterisk">
+                <i className="fas fa-asterisk"> </i>
+              </div>
+              <p>
+                We will also learn how to use keyframes and hover effect
+                animations as well as a new tool to animate on scroll called
+                Scroll Reveal. Finally we will use media queries to make this
+                web design responsive! The Rosa is a premium WordPress theme you
+                can purchase. Links below.
+              </p>
+            </div>
+            <div className="footer-content-divider animate-bottom">
+              <div className="social-menu">
+                <h4 className="follow-us">Follow Us</h4>
+                <ul className="social-icons">
+                  <li>
+                    <a href="#">
+                      {" "}
+                      <i className="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {" "}
+                      <i className="fab fa-facebook-square"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {" "}
+                      <i className="fab fa-pinterest"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {" "}
+                      <i className="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {" "}
+                      <i className="fab fa-tripadvisor"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="newsletter-container">
+                <h4>Newsletter</h4>
+                <form action="" className="newsletter-form">
+                  <input
+                    type="text"
+                    className="newletter-input"
+                    placeholder="Enter Your Email"
+                  />
+                  <button className="newsetter-btn" type="submit"><i className="fas fa envelope"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
